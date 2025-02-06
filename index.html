@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Medicine Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Medicine Reminder</h1>
+        <label for="medicineName">Medicine Name:</label>
+        <input type="text" id="medicineName" placeholder="Enter Medicine Name">
+
+        <label for="medicineTime">Time:</label>
+        <input type="time" id="medicineTime">
+
+        <button onclick="setReminder()">Set Reminder</button>
+
+        <h2>Upcoming Reminders</h2>
+        <ul id="reminderList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Request permission for notifications when the page loads
+        requestNotificationPermission();
+    </script>
+</body>
+</html>
