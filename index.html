@@ -3,28 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Medicine Reminder</title>
+    <title>Disease Information</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Smart Medicine Reminder</h1>
-        <label for="medicineName">Medicine Name:</label>
-        <input type="text" id="medicineName" placeholder="Enter Medicine Name">
 
-        <label for="medicineTime">Time:</label>
-        <input type="time" id="medicineTime">
+    <header>
+        <hr>
+        <h1><i>Disease Information Portal</i></h1>
+        <hr>
+    </header>
 
-        <button onclick="setReminder()">Set Reminder</button>
+    <main>
+        <h2><i>Select a Disease to Learn More:</i></h2>
+        <form id="diseaseForm">
+            <div class="checkbox-container">
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="disease" value="cold"> Cold</label>
+                    <label><input type="checkbox" name="disease" value="fever"> Fever</label>
+                </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="disease" value="headaches"> Headaches</label>
+                    <label><input type="checkbox" name="disease" value="allergies"> Allergies</label>
+                </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="disease" value="diabetes"> Diabetes</label>
+                    <label><input type="checkbox" name="disease" value="asthma"> Asthma</label>
+                </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="disease" value="hiv"> HIV</label>
+                    <label><input type="checkbox" name="disease" value="diarrhea"> Diarrhea</label>
+                </div>
+            </div>
+        </form>
 
-        <h2>Upcoming Reminders</h2>
-        <ul id="reminderList"></ul>
-    </div>
+        <div id="diseaseInfo"></div>
+    </main>
+
+    <footer>
+        <hr>
+        <p><i><b>By</b></i></p>
+        <p><i><b>Nitharshana N</b></i></p>
+        <p><i><b>Trishna KPK</b></i></p>
+        <p>&copy; <i><b>Copyright</b></i></p>
+    </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Request permission for notifications when the page loads
-        requestNotificationPermission();
-    </script>
 </body>
 </html>
