@@ -30,7 +30,7 @@ document.getElementById('diseaseForm').addEventListener('change', function(event
 function getDiseaseInfo(disease) {
     const diseaseData = {
         cold: {
-            name: 'Common Cold',
+            name: 'Cold',
             causes: 'Caused by viruses such as rhinoviruses.',
             prevention: 'Wash hands regularly, avoid close contact with sick individuals.',
             solutions: 'Rest, stay hydrated, over-the-counter cold remedies.',
