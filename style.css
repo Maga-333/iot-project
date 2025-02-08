@@ -1,78 +1,85 @@
-/* Basic Reset */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f7;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #2c3e50;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #7bf5f5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+/* Header */
+header {
+    background-color: #1216fc;
+    color: black;
+    padding: 15px;
     text-align: center;
 }
 
-h1 {
-    font-size: 2rem;
-    color: #2980b9;
-    margin-bottom: 20px;
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
 }
 
-label {
-    font-size: 1rem;
-    margin-top: 10px;
-    display: block;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
+/* Headings */
 h2 {
-    margin-top: 30px;
-    color: #34495e;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    background-color: #ecf0f1;
-    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: #7bb0f5;
     padding: 10px;
+    display: inline-block;
+}
+
+/* Checkbox Container */
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* Disease Info Box */
+#diseaseInfo {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(219, 253, 252);
+    color: black;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Footer Always at Bottom */
+footer {
+    background-color: #1216fc;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .disease-box {
+        width: 90%;
+    }
+    form label {
+        display: block;
+        margin: 5px;
+    }
 }
