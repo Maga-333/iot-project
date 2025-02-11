@@ -10,7 +10,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Header */
+/* Header and Footer */
 header, footer {
     width: 100%;
     text-align: center;
@@ -20,7 +20,7 @@ header, footer {
     font-family: 'Times New Roman', Times, serif;
 }
 
-hr{
+hr {
     color: white;
 }
 
@@ -56,13 +56,13 @@ h2 {
     align-items: start;
 }
 
-#otherDiseases{
+#otherDiseases {
     width: 250px;
     height: 30px;
     box-shadow: black;
 }
 
-label{
+label {
     font-size: 5mm;
 }
 
@@ -76,17 +76,19 @@ label{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h3{
-    color:black;
+h3 {
+    color: black;
     font-weight: bold;
     background-color: #7bf5f5;
     padding: 10px;
     display: inline-block;
 }
 
-#hi{
+#hi {
     color: black;
     font-weight: bold;
     font-size: 10mm;
@@ -94,11 +96,48 @@ h3{
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .disease-box {
-        width: 90%;
+    body {
+        font-size: 14px;
     }
-    form label {
-        display: block;
-        margin: 5px;
+
+    .checkbox-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .checkbox-group {
+        align-items: center;
+    }
+
+    #otherDiseases {
+        width: 100%;
+    }
+
+    #diseaseInfo {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+/* Additional responsive fixes */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #hi {
+        font-size: 8mm;
     }
 }
