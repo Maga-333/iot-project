@@ -33,7 +33,7 @@ main {
 
 /* Headings */
 h2 {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: bold;
     color: black;
     background-color: #7bb0f5;
@@ -56,6 +56,16 @@ h2 {
     align-items: start;
 }
 
+#otherDiseases{
+    width: 250px;
+    height: 30px;
+    box-shadow: black;
+}
+
+label{
+    font-size: 5mm;
+}
+
 /* Disease Info Box */
 #diseaseInfo {
     margin-top: 20px;
@@ -64,9 +74,24 @@ h2 {
     color: black;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
+    width: 500px;
+    margin-left: 400px;
 }
 
+h3{
+    color:black;
+    font-weight: bold;
+    background-color: #7bf5f5;
+    padding: 10px;
+    display: inline-block;
+}
+
+#hi{
+    color: black;
+    font-weight: bold;
+    font-size: 10mm;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

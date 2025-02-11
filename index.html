@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disease Information</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .checked {
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,24 +25,29 @@
     </header>
 
     <main>
-        <h2><i>Select a Disease to Learn More:</i></h2>
+        
         <form id="diseaseForm">
             <div class="checkbox-container">
+                <!-- Common Diseases -->
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="disease" value="cold"> Cold</label>
-                    <label><input type="checkbox" name="disease" value="fever"> Fever</label>
-                </div>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="disease" value="headaches"> Headaches</label>
-                    <label><input type="checkbox" name="disease" value="allergies"> Allergies</label>
-                </div>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="disease" value="diabetes"> Diabetes</label>
-                    <label><input type="checkbox" name="disease" value="asthma"> Asthma</label>
-                </div>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="disease" value="hiv"> HIV</label>
-                    <label><input type="checkbox" name="disease" value="hypertension"> Hypertension</label>
+                    <h2><i>Diseases Information</i></h2>
+                    
+                    <select id="otherDiseases" name="disease">
+                        <option value="">Select a disease</option>
+                        <option value="cold">Cold</option>
+                        <option value="fever">Fever</option>
+                        <option value="headaches">Headaches</option>
+                        <option value="allergies">Allergies</option>
+                        <option value="diabetes">Diabetes</option>
+                        <option value="asthma">Asthma</option>
+                        <option value="hiv">HIV</option>
+                        <option value="hypertension">Hypertension</option><option value="">Select a disease</option>
+                        <option value="heart_disease">Heart Disease</option>
+                        <option value="cancer">Cancer</option>
+                        <option value="brain_tumor">Brain Tumor</option>
+                        <option value="hand_bone_fracture">Hand Bone Fracture</option>
+                        <option value="leg_foot_fracture">Leg & Foot Fracture</option>
+                    </select>
                 </div>
             </div>
         </form>
